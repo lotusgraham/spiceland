@@ -5,206 +5,16 @@
   <meta charset="utf-8">
 
   <title>Spiceland</title>
-  <meta name="description" content="The HTML5 Herald">
-
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="dope" content="art">
 
 <style>
-
-.hvr-icon-spin {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  padding-right: 2.2em;
-}
-.hvr-icon-spin:before {
-  content: "";
-  position: absolute;
-  right: 9vmin;
-  top:-10vmin;
-  padding: 0 1px;
-  font-family: FontAwesome;
-  -webkit-transition-duration: 1s;
-  transition-duration: 1s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-}
-.hvr-icon-spin:hover:before, .hvr-icon-spin:focus:before, .hvr-icon-spin:active:before {
-  -webkit-transform: rotate(360deg);
-  transform: rotate(360deg);
-}
-
-
-/* Icon Float Away */
-@-webkit-keyframes hvr-icon-float-away {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-1em);
-    transform: translateY(-1em);
-  }
-}
-@keyframes hvr-icon-float-away {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(-1em);
-    transform: translateY(-1em);
-  }
-}
-/* Icon Float Away */
-.hvr-icon-float-away {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  padding-right: 2.2em;
-}
-.hvr-icon-float-away:before, .hvr-icon-float-away:after {
-  content: "";
-  position: absolute;
-  right: 15vmin;
-  top:-10vmin;
-  padding: 0 1px;
-  font-family: FontAwesome;
-}
-.hvr-icon-float-away:after {
-  opacity: 0;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}
-.hvr-icon-float-away:hover:after, .hvr-icon-float-away:focus:after, .hvr-icon-float-away:active:after {
-  -webkit-animation-name: hvr-icon-float-away;
-  animation-name: hvr-icon-float-away;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-}
-
-
-/* Pulse Grow */
-@-webkit-keyframes hvr-pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-}
-@keyframes hvr-pulse-grow {
-  to {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-  }
-}
-.hvr-pulse-grow {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-}
-.hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
-  -webkit-animation-name: hvr-pulse-grow;
-  animation-name: hvr-pulse-grow;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  animation-direction: alternate;
-}
-
-
-/* Icon Fade */
-.hvr-icon-fade {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  padding-right: 2.2em;
-}
-.hvr-icon-fade:before {
-  content: "";
-  position: absolute;
-  top:-10vmin;
-  right: 10vmin;
-  padding: 0 1px;
-  font-family: FontAwesome;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.6s;
-  -webkit-transition-property: color;
-  transition-property: color;
-}
-.hvr-icon-fade:hover:before, .hvr-icon-fade:focus:before, .hvr-icon-fade:active:before {
-  color: tomato;
-}
-
-
-/* Icon Grow Rotate */
-.hvr-icon-grow-rotate {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  position: relative;
-  padding-right: 2.2em;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-.hvr-icon-grow-rotate:before {
-  content: "\f206";
-  position: absolute;
-  top:-10vmin;
-  right: 9vmin;
-  padding: 0 1px;
-  font-family: FontAwesome;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-icon-grow-rotate:hover:before, .hvr-icon-grow-rotate:focus:before, .hvr-icon-grow-rotate:active:before {
-  -webkit-transform: scale(1.5) rotate(12deg);
-  transform: scale(1.5) rotate(12deg);
-}
-
-
-
-
 .ctn {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color:  white;
-  /*min-height: 24em;*/
-  max-height: 27vmin;
-
-
-}
-
-.head {
+  /*min-height: 18em;*/
+  max-height: 36vmin;
 }
 
 .block{
@@ -213,14 +23,10 @@
   background-color: white;
   /*height:230px;
   margin: 3em;*/
-  height: 23vmin;
-  margin: 2vmin;
-  max-width: 31vmin;
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  height: 31vmin;
+    margin: 2vmin;
+    max-width: 31vmin;
+  /*border: 1px solid black;*/
 
 }
 
@@ -234,32 +40,43 @@
 }
 
 .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.art{
   align-self: flex-end;
 }
 
-.fa{
-  font-size: 20vmin;
+/*body{
+  background-color: cadetblue;
+}*/
+
+img{
+  max-width: 31vmin;
 }
+
 </style>
 <div class="ctn head">
   <div class ="block invisible"></div>
-  <div class ="block fa"> <div class="hvr-icon-fade"></div> </div>
-  <div class ="block invisible"></div>
+  <div class ="block"><img src="./img/josh.gif" alt=""></div>
+  <div class ="block invisible bottom"><img class="art" src="./img/art.gif" alt=""></div>
 </div>
 <div class="ctn">
-  <div class ="block fa"><div class="hvr-pulse-grow"></div></div>
-  <div class ="block fa"><div class="hvr-icon-spin"></div></div>
-  <div class ="block fa"><div class="hvr-icon-float-away"></div></div>
+  <div class ="block "><img src="./img/pastwork.gif" alt=""></div>
+  <div class ="block"><img src="./img/newwork.gif" alt=""></div>
+  <div class ="block "><img src="./img/drawings.gif" alt=""></div>
 </div>
 <div class="ctn">
-  <div class ="block fa"></div>
-  <div class ="block fa"><div class="hvr-icon-grow-rotate"></div></div>
-  <div class ="block fa"></div>
+  <div class ="block "><img src="./img/design.gif" alt=""></div>
+  <div class ="block"><img src="./img/murals.gif" alt=""></div>
+  <div class ="block "><img src="./img/sculpture.gif" alt=""></div>
 </div>
 <div class="ctn">
-  <div class ="block fa"></div>
-  <div class ="block fa"></div>
-  <div class ="block fa"></div>
+  <div class ="block "><img src="./img/bio.gif" alt=""></div>
+  <div class ="block"><img src="./img/statement.gif" alt=""></div>
+  <div class ="block "><img src="./img/contact.gif" alt=""></div>
 </div>
 </head>
 

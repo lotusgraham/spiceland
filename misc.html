@@ -22,27 +22,16 @@
 				<!-- <a id="og-additems" href="#">add more</a> -->
 			</div>
 		</div><!-- /container -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script src="js/grid.js"></script>
-		<script>
-			$(function() {
-				Grid.init();
-			});
-		</script>
-
-
-
 		<script type="riot/tag">
-
 		<spice-image>
-		<ul id="og-grid" class="og-grid">
-			<li each={ items }>
-				<a href="http://gwhitley.com/spiceland" data-largesrc="images/{ pic }.jpg" data-title="Azuki bean" data-description={ description }>
-					<img src="images/thumbs/{ pic }.jpg" alt="img{ pic }"/>
-				</a>
-			</li>
-		</ul>
 
+			<ul id="og-grid" class="og-grid">
+				<li each={ items }>
+					<a href="http://gwhitley.com/spiceland" data-largesrc="images/{ pic }.jpg" data-title="Azuki bean" data-description={ description }>
+						<img src="images/thumbs/{ pic }.jpg" alt="img{ pic }"/>
+					</a>
+				</li>
+		</ul>
       this.items = [
 				{pic: 1},
 				{pic: 2},
@@ -65,13 +54,15 @@
 			]
 
 		</spice-image>
-
 		</script>
-
-
-
 		<script src="https://rawgit.com/riot/riot/master/riot%2Bcompiler.min.js"></script>
     <script> riot.mount('spice-image') </script>
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/grid.js"></script>
+		<script>
+			$(function() {
+				Grid.init();
+			});
+		</script>
 	</body>
 </html>
